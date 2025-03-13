@@ -7,13 +7,6 @@
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
 
-*---
-
-## Table of Contents.
-- [Project Information](#-project-information).  
-- [Requirements](#-requirements).  
-- [Data](#-data).  
-- [File](#-file).
 
 ---
 
@@ -26,17 +19,17 @@ This project extracts medical information from PDF files, processes the data, an
 ---
 
 ## Requirements.
-pandas==2.2.3
-pdfplumber==0.11.5
-PyPDF2==3.0.1
+- pandas==2.2.3
+- pdfplumber==0.11.5
+- PyPDF2==3.0.1
 
 
 ## File.
 
 - [📄 header_footer_to_df.py](#-header-footer-to-df-py)
--  [📄extract_tables.py](#-extract_tables.py)  
--  [📄 utils.py](#- utils.py).
--  [📄main.py ](#-main)  
+-  [📄extract_tables.py](#-extract_tables.py).
+-  [📄 utils.py](#-utils.py).
+-  [📄main.py ](#-main).
 
 
 ### header_footer_to_df.py
@@ -58,7 +51,7 @@ El archivo contiene un conjunto de funciones para la extracción y procesamiento
 - `extraer_tabla( ):`
 
 ### utils.py
-El archivo contiene un conjunto de funciones para la extracción y procesamiento de datos médicos generando tablas específicas de secciones de un expediente médico, como "Signos Vitales", "Diagnósticos Activos", y "Órdenes de Medicamentos Hospitalarios".
+Este archivo utils.py tiene como objetivo extraer y estructurar en su totalidad la información médica d de las secciones "Signos Vitales" y "Diagnósticos Activos". Los datos extraídos se organizan en un diccionario, con cada sección clave (como "Signos" y "Diagnósticos") conteniendo su respectiva información en formato de texto o DataFrame para su posterior análisis o reporte.
 #### Funciones principales:
 - `get_diagnosticos_activos( ):`
 - `get_diagnosticos_para_excel( ):`
