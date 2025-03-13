@@ -35,7 +35,7 @@ PyPDF2==3.0.1
 
 - [📄 header_footer_to_df.py](#-header-footer-to-df-py)
 -  [📄extract_tables.py](#-extract_tables.py)  
--  [📄 utils.py](#- utils.py)  
+-  [📄 utils.py](#- utils.py).
 -  [📄main.py ](#-main)  
 
 
