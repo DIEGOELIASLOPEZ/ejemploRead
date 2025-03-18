@@ -82,7 +82,7 @@ Ejemplo de cómo especificar la ruta dentro del script:
     ruta_pdf = "C:/Users/Usuario/Escritorio/think-tank/data/archivo.pdf"  # Windows
     ruta_pdf = "/home/usuario/Escritorio/think-tank/data/archivo.pdf"  # Linux
 
-#Example Output.
+# Ejemplo  
 
 ```json
 {
