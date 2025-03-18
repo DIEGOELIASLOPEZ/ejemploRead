@@ -6,39 +6,141 @@
 
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
----
+**Table of Contents**
 
-## Project Information.  
-This project extracts medical information from PDF files, processes the data, and stores it in a structured format.  
+[TOCM]
 
-### Example Output.  
- `Ejemplo_Estructura_Diccionario.json`  
-
----
-
-## Requirements.
+#Proyect Information.
+This project extracts medical information from PDF files, processes the data, and stores it in a structured format.
+#Requirements.
 - pandas==2.2.3
 - pdfplumber==0.11.5
 - PyPDF2==3.0.1
 
-## Files.
+#Example Output.
 
-- [📄 header_footer_to_df.py](#header_footer_to_df)
-- [📄 extract_tables.py](#extract_tables)
-- [📄 utils.py](#utils)
-- [📄 main.py](#main)
+```json
+{
+    "Nota_de_evolución": {
+      "Header_Footer": [{
+        "No_nota": "100091631",
+        "Tipo_nota": "Nota de Evolución",
+        "No_Expediente": "61913",
+        "HIM": "872878",
+        "Apellido_paterno": "Chavez",
+        "Apellido_materno": "Hernandez",
+        "Nombres": "Antonela Valentina",
+        "Fecha_nacimiento": "29/11/2016",
+        "Edad": "7 años",
+        "Sexo": "Femenino",
+        "Fecha_ingreso" : "13/05/2024" ,
+        "Hora_ingreso" : "14:57",
+        "Fecha_alta" : "",
+        "Hora_alta" : "",
+        "Firmado_por" : "TOVILLA GUTIÉRREZ , JOSÉ MANUEL",
+        "Cedula_profesional" : "12192728",
+        "Fecha_creacion" : "21/05/2024",
+        "Hora_creacion" : "11:26",
+        "Hospital" : "Hospital Infantil de México Federico Gómez",
+        "Pronostico" : "Reservado",
+        "Supervisor_nombre" :"Dr. Dávila JDCP Dr. Fernández MACCR Dr. Domínguez MACCR",
+        "Nombre_Completo" : "JM Tovilla"
+      }],
 
-### header_footer_to_df.py
-Se encarga de extraer y procesar los datos generales que se encuentran en el encabezado del expediente. Estos datos incluyen información clave sobre el paciente, el historial clínico y los detalles administrativos de la nota médica. 
+      "Signos_Vitales": {
+        "Signos": [
+          {
+            "Fecha_Hora": "21/05/2024 06:29",
+            "FR": "",
+            "FC": "",
+            "PAS": "",
+            "PAD": "",
+            "Sat_O2": "",
+            "Temp_C": "",
+            "Peso": "19.00",
+            "Talla": ""
+          }
+        ],
+        "Subjetivo": "NOTA DE EVOLUCIÓN CIRUGÍA COLORRECTAL Antonela Valentina con diagnósticos de: - Estreñimiento crónico intratable ..."
+      },
 
-#### Funciones principales:  
+      "Diagnósticos_Activos": {
+        "Notas": "BH +162 ml, GU 1.35 ml/kg/h, GF Paciente femenino de edad aparente similar a cronológica, neurológicamente íntegra,normohidratada,...",
+        "Examen_Físico": "",
+        
+        "Diagnósticos_Activos_tabla": [{
+          "Fecha_Ingresada": "15/02/2024 10:55",
+          "Descripción": "K59.0 Estreñimiento",
+          "Tipo": "Diagnóstico",
+          "Médico": "Castillo Santiago , Dafne",
+          "Notas": ""
+        }],
+        
+        "Análisis_Condición": "Valentina quien persiste con salida de material fétido a través...",
+        "Comentar_estudio": ".",
+        "Plan_de_Tratamiento": "Ayuno + SDB Vigilancia de condiciones abdominales Técnica de doble pañal..."
+      },
+
+      "Órdenes_de_Dietéticas_Activas": [
+        {
+          "Fecha_Ingresada": "15/05/2024 20:05",
+          "Tipo": "NPO",
+          "Tipo_terapéutico": "",
+          "Notas": ""
+        }
+      ],
+
+      "Órdenes_de_Enfermería_Activas": [
+        {
+          "Fecha_Ingresada": "17/05/2024 17:23",
+          "Orden": "INSTALACIÓN DE NPT",
+          "Médico": "García Solis, Dania Belem"
+        }
+      ],
+
+      "Órdenes_de_Medicamentos_Hospitalarios": [
+        {
+          "Inicio": "21/05/2024 16:00",
+          "Medicamento": "LOPERAMIDA TABLETAS 2 mg (LOPERAMIDA TABLETAS 2 mg(Gastroenterologia))",
+          "Frecuencia": "Cada 8 horas",
+          "Vía": "ORAL",
+          "Dosis": "4.00",
+          "UDM": "mg",
+          "Cantidad": "2.00",
+          "Tipo": "Pastilla",
+          "Médico": "García Solis,Dania Belem",
+          "Tasa_de_Flujo": ""
+        },
+        {
+          "Inicio": "21/05/2024 10:34",
+          "Medicamento": "OCTREOTIDA SOLUCIÓN INYECTABLE 1 mg/5 ml (OCTREOTIDA SOLUCIÓN INYECTABLE 1 mg/5 ml)",
+          "Frecuencia": "Continua",
+          "Vía": "INTRAVENOSA",
+          "Dosis": "2000",
+          "UDM": "Microgramo",
+          "Cantidad": "10.00",
+          "Tipo": "ml",
+          "Médico": "García Solis,Dania Belem",
+          "Tasa_de_Flujo": ""
+        }
+      ]
+    }
+}
+```
+
+---
+#📂Files.
+##📗header_footer_to_df
+Se encarga de extraer y procesar los datos generales que se encuentran en el encabezado del expediente. Estos datos incluyen información clave sobre el paciente, el historial clínico y los detalles administrativos de la nota médica.
+###  Funciones principales:  
 - `get_head( )`
 - `get_patient_data() :`
 - `get_mediacal_data( ):`
 
-### extract_tables.py
-El archivo contiene un conjunto de funciones para la extracción y procesamiento de datos médicos generando tablas específicas de secciones de un expediente médico, como "Signos Vitales", "Diagnósticos Activos", y "Órdenes de Medicamentos Hospitalarios".
-#### Funciones principales:
+## 📘extract_tables.py
+El archivo contiene un conjunto de funciones para la extracción y procesamiento de datos médicos generando tablas específicas de secciones de un expediente médico, como "Signos Vitales", "Diagnósticos Activos", y "Órdenes de Medicamentos Hospitalarios"
+
+###  Funciones principales:  
 - `pdf_a_texto( ):`
 - `extract_fecha( ):`
 - `econtrar_seccion( )`
@@ -46,7 +148,7 @@ El archivo contiene un conjunto de funciones para la extracción y procesamiento
 - `comprobacion_final( )`
 - `extraer_tabla( ):`
 
-### utils.py
+##📕utils.py
 Este archivo `utils.py` tiene como objetivo extraer y estructurar en su totalidad la información médica de las secciones "Signos Vitales" y "Diagnósticos Activos". Los datos extraídos se organizan en un diccionario, con cada sección clave (como "Signos" y "Diagnósticos") conteniendo su respectiva información en formato de texto o DataFrame para su posterior análisis o reporte.
 #### Funciones principales:
 - `get_diagnosticos_activos( ):`
@@ -54,23 +156,29 @@ Este archivo `utils.py` tiene como objetivo extraer y estructurar en su totalida
 - `get_signos_vitales(text):`
 - `get_text_from_pdf(pdf_path):`
 
-## main.py
-Archivo principal del proyecto, se encarga de coordinar la extracción, procesamiento y almacenamiento de los datos en un `diccionario.json`.
+##📙main.py
+### Funciones:
+- `df_to_dict(df, columns):`
+- `get_header_footer(text):`
+- ` extract_and_validate(texto_extraido, seccion, columns):`
+- ` main():`
 
-## Funcionalidad
+
+### Uso
 
 1. Carga el archivo PDF desde la ruta especificada.
-2. Extrae los datos del encabezado y pie de página utilizando las funciones del archivo [`header_footer_to_df.py`](#header_footer_to_df).
-3. Extrae los datos de cada sección usando las funciones de [`extract_tables.py`](#extract_tables) y [`utils.py`](#utils).
+2. Extrae los datos del encabezado y pie de página utilizando las funciones del archivo `header_footer_to_df.py`
+3. Extrae los datos de cada sección usando las funciones de `extract_tables.py`  y `utils.py`.
 4. Organiza la información en un diccionario estructurado.
 5. Guarda los datos en una variable en formato JSON.
 
+
 ### Configuración de la ruta del PDF
 
-Antes de ejecutar el script, es necesario definir la ruta del archivo PDF en la variable global `ruta_pdf`. Una vez que la ruta esté configurada correctamente, el programa estará listo para ejecutarse.
+Antes de ejecutar el script, es necesario definir la ruta del archivo PDF en la variable global ***ruta_pdf***. Una vez que la ruta esté configurada correctamente, el programa estará listo para ejecutarse.
 
 Ejemplo de cómo especificar la ruta dentro del script:
 
-```python
-ruta_pdf = "C:/Users/Usuario/Escritorio/think-tank/data/archivo.pdf"  # Windows
-ruta_pdf = "/home/usuario/Escritorio/think-tank/data/archivo.pdf"  # Linux
+
+    ruta_pdf = "C:/Users/Usuario/Escritorio/think-tank/data/archivo.pdf"  # Windows
+    ruta_pdf = "/home/usuario/Escritorio/think-tank/data/archivo.pdf"  # Linux
