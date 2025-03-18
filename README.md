@@ -78,10 +78,9 @@ Antes de ejecutar el script, es necesario definir la ruta del archivo PDF en la 
 
 Ejemplo de cómo especificar la ruta dentro del script:
 
-```python
-ruta_pdf = "C:/Users/Usuario/Escritorio/think-tank/data/archivo.pdf"  # Windows
-ruta_pdf = "/home/usuario/Escritorio/think-tank/data/archivo.pdf"  # Linux
 
+    ruta_pdf = "C:/Users/Usuario/Escritorio/think-tank/data/archivo.pdf"  # Windows
+    ruta_pdf = "/home/usuario/Escritorio/think-tank/data/archivo.pdf"  # Linux
 
 #Example Output.
 
@@ -193,4 +192,3 @@ ruta_pdf = "/home/usuario/Escritorio/think-tank/data/archivo.pdf"  # Linux
     }
 }
 ```
-
