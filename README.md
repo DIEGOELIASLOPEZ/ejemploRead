@@ -2,7 +2,7 @@
 
 **Extracción, procesamiento y almacenamiento estructurado de datos médicos desde un archivo PDF.**
 
-![Logo](https://www.iimas.unam.mx/wp-content/uploads/2023/11/Logo-pagina-ok.png)
+![Logo]([https://www.iimas.unam.mx/wp-content/uploads/2023/11/Logo-pagina-ok.png](https://github.com/DIEGOELIASLOPEZ/ejemploRead/blob/main/IMMAS%20logo.png?raw=true))
 
 ![GitHub Stars](https://img.shields.io/github/stars/pandao/editor.md.svg)
 ![GitHub Forks](https://img.shields.io/github/forks/pandao/editor.md.svg)
