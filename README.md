@@ -11,10 +11,10 @@
 1. [Información del Proyecto](#información-del-proyecto)
 2. [Requisitos](#requisitos)
 3. [Archivos](#archivos)
-   1. [header_footer_to_df](#header_footer_to_df)
-   2. [extract_tables.py](#extract_tablespy)
-   3. [utils.py](#utilspy)
-   4. [main.py](#mainpy)
+   -  [header_footer_to_df.py](#header_footer_to_dfpy)
+   - [extract_tables.py](#extract_tablespy)
+   -  [utils.py](#utilspy)
+   -  [main.py](#mainpy)
 4. [Uso](#uso)
 5. [Ejemplo de Salida](#ejemplo-de-salida)
 ---
@@ -33,7 +33,7 @@ Este proyecto extrae información médica desde archivos PDF, procesa los datos 
 
 ## 📂 Archivos
 
-### 📗 `header_footer_to_df`
+### 📗 `header_footer_to_df.py`
 
 Se encarga de extraer y procesar los datos generales que se encuentran en el encabezado del expediente. Estos incluyen información clave sobre el paciente, el historial clínico y detalles administrativos de la nota médica.
 
@@ -194,3 +194,5 @@ Ejemplo de cómo especificar la ruta dentro del script:
       ]
     }
 }
+
+```
