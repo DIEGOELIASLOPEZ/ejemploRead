@@ -8,7 +8,7 @@
 
 **Table of Contents**
 
-[TOCM]
+[TOC]
 
 #Proyect Information.
 This project extracts medical information from PDF files, processes the data, and stores it in a structured format.
