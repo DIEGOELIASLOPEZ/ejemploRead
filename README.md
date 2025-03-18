@@ -8,14 +8,14 @@
 
 ## Tabla de Contenidos
 
-1. [Información del Proyecto](#información-del-proyecto)
-2. [Requisitos](#requisitos)
+1. [🧾Información del Proyecto](#información-del-proyecto)
+2. [📋Requisitos](#requisitos)
 3. [📂Archivos](#archivos)
-   -  header_footer_to_df.py
-   - extract_tables.py
-   -  utils.py
-   -  main.py
-4. [Uso](#uso)
+   -  [📗header_footer_to_df.py](#header_footer_to_dfpy)
+   - [📘extract_tables.py](#extract_tablespy)
+   -  [ 📙utils.py](#utilspy)
+   -  [ 📕main.py](#mainpy)
+4. [📜Uso](#uso)
 5. [Ejemplo de Salida](#ejemplo-de-salida)
 ---
 
@@ -33,7 +33,7 @@ Este proyecto extrae información médica desde archivos PDF, procesa los datos 
 
 ## Archivos
 
-### 📗 header_footer_to_df.py
+### header_footer_to_df.py
 
 Se encarga de extraer y procesar los datos generales que se encuentran en el encabezado del expediente. Estos incluyen información clave sobre el paciente, el historial clínico y detalles administrativos de la nota médica.
 
@@ -42,7 +42,7 @@ Se encarga de extraer y procesar los datos generales que se encuentran en el enc
 - `get_patient_data()`
 - `get_medical_data()`
 
-### 📘 extract_tables.py
+### extract_tables.py
 
 Contiene un conjunto de funciones para la extracción y procesamiento de datos médicos, generando tablas específicas de secciones de un expediente médico como "Signos Vitales", "Diagnósticos Activos", y "Órdenes de Medicamentos Hospitalarios".
 
@@ -54,7 +54,7 @@ Contiene un conjunto de funciones para la extracción y procesamiento de datos m
 - `comprobacion_final()`
 - `extraer_tabla()`
 
-### 📕 utils.py
+### utils.py
 
 Este archivo tiene como objetivo extraer y estructurar la información médica completa de las secciones "Signos Vitales" y "Diagnósticos Activos". Los datos extraídos se organizan en un diccionario, con cada sección clave (como "Signos" y "Diagnósticos") conteniendo su respectiva información en formato de texto o DataFrame para su posterior análisis o reporte.
 
@@ -64,7 +64,7 @@ Este archivo tiene como objetivo extraer y estructurar la información médica c
 - `get_signos_vitales(text)`
 - `get_text_from_pdf(pdf_path)`
 
-### 📙 main.py
+### main.py
 
 #### Funciones principales:
 - `df_to_dict(df, columns)`
