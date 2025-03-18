@@ -194,5 +194,3 @@ Ejemplo de cómo especificar la ruta dentro del script:
       ]
     }
 }
-
-```
