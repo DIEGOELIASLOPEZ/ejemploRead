@@ -10,11 +10,11 @@
 
 1. [Información del Proyecto](#información-del-proyecto)
 2. [Requisitos](#requisitos)
-3. [Archivos](#archivos)
-   -  [header_footer_to_df.py](#📗header_footer_to_dfpy)
-   - [extract_tables.py](#extract_tablespy)
-   -  [utils.py](#utilspy)
-   -  [main.py](#mainpy)
+3. [📂Archivos](#archivos)
+   -  header_footer_to_df.py
+   - extract_tables.py
+   -  utils.py
+   -  main.py
 4. [Uso](#uso)
 5. [Ejemplo de Salida](#ejemplo-de-salida)
 ---
@@ -64,7 +64,7 @@ Este archivo tiene como objetivo extraer y estructurar la información médica c
 - `get_signos_vitales(text)`
 - `get_text_from_pdf(pdf_path)`
 
-### main.py
+### 📙 main.py
 
 #### Funciones principales:
 - `df_to_dict(df, columns)`
