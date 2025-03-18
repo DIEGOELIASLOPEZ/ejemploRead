@@ -7,6 +7,7 @@
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
 ## Tabla de Contenidos
+*Haz click en la sección que deseas consultar*
 
 1. [**🧾Información del Proyecto**](#información-del-proyecto)
 2. [📋**Requisitos**](#requisitos)
