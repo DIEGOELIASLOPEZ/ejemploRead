@@ -15,8 +15,8 @@
    - [📘extract_tables.py](#extract_tablespy)
    -  [ 📙utils.py](#utilspy)
    -  [ 📕main.py](#mainpy)
-4. [📜Uso](#uso)
-5. [Ejemplo de Salida](#ejemplo-de-salida)
+4. [📄Uso](#uso)
+5. [📜Ejemplo de Salida](#ejemplo-de-salida)
 ---
 
 ## Información del Proyecto
