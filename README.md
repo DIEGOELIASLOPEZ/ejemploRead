@@ -16,6 +16,7 @@ This project extracts medical information from PDF files, processes the data, an
 
 ---
 #📂Files.
+
 ##📗header_footer_to_df
 Se encarga de extraer y procesar los datos generales que se encuentran en el encabezado del expediente. Estos datos incluyen información clave sobre el paciente, el historial clínico y los detalles administrativos de la nota médica.
 ###  Funciones principales:  
