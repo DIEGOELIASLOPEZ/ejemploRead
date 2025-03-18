@@ -58,7 +58,7 @@ Este archivo tiene como objetivo extraer y estructurar la información médica c
 
 ### 📙 `main.py`
 
-#### Funciones principales:
+### Funciones principales:
 - `df_to_dict(df, columns)`
 - `get_header_footer(text)`
 - `extract_and_validate(texto_extraido, seccion, columns)`
