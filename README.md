@@ -11,12 +11,12 @@
 1. [Información del Proyecto](#información-del-proyecto)
 2. [Requisitos](#requisitos)
 3. [Archivos](#archivos)
-   -  [header_footer_to_df.py](#header_footer_to_dfpy)
-   - [extract_tables.py](#extract_tablespy)
-   -  [utils.py](#utilspy)
-   -  [main.py](#mainpy)
-4. [Uso](#uso)
-5. [Ejemplo de Salida](#ejemplo-de-salida)
+4. [header_footer_to_df.py](#header_footer_to_dfpy)
+5. [extract_tables.py](#extract_tablespy)
+6. [utils.py](#utilspy)
+7. [main.py](#mainpy)
+8. [Uso](#uso)
+9. [Ejemplo de Salida](#ejemplo-de-salida)
 ---
 
 ## Información del Proyecto
